@@ -54,7 +54,7 @@ const Contact = () => {
               and our team will get back to you shortly.
             </p>
             <div className="relative w-fit ml-4 rounded-full bg-black">
-              <button className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8">
+              <button className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8">
                 Call Now
                 <FaArrowRight className="text-sm" />
               </button>
@@ -126,7 +126,7 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full text-sm bg-[#FF9000] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                className="w-full text-sm bg-[#FF9000] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 hover:bg-orange-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
               >
                 Send Us
                 <FaArrowRight className="text-sm" />
