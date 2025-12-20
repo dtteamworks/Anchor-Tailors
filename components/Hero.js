@@ -16,7 +16,7 @@ export default function Hero() {
 
         {/* Main Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-light mb-4">Perfict fit Tailoring Crafted with precision ,</h2>
+          <h2 className="text-4xl font-light mb-4">Perfect fit Tailoring Crafted with precision ,</h2>
           <h1 className={`text-5xl md:text-7xl font-semibold`}>Comfort & Style</h1>
         </div>
 

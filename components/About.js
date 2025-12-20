@@ -109,7 +109,7 @@ const About = () => {
         </div>
       </div>
        {/* Bottom Wave Layer */}
-          <div className="absolute bottom-0 left-0 right-0 w-full h-24 md:h-32 z-50">
+          <div className="absolute -bottom-1 sm:bottom-0 left-0 right-0 w-full h-24 md:h-32 z-50">
             <Image
               src="/aboutBottomLayer.png"
               alt="Wave decoration"

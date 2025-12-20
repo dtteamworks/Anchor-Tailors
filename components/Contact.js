@@ -38,11 +38,11 @@ const Contact = () => {
 
   return (
     <section className={`relative py-16  ${outfit.className} overflow-hidden`}>
-      <div className="w-full absolute top-[20%] h-full bg-[#FAFAFA] -z-10" />
+      <div className="w-full absolute top-[5%] sm:top-[20%] h-full bg-[#FAFAFA] -z-10" />
       <div className="max-w-7xl mx-auto z-50">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Section */}
-          <div className="space-y-6">
+          <div className="space-y-6 p-5 sm:p-0">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 leading-tight">
               Get in Touch
               <br />
@@ -53,13 +53,12 @@ const Contact = () => {
               Have questions or want to book tailoring services? Reach out to us
               and our team will get back to you shortly.
             </p>
-<div className="relative w-fit ml-4 rounded-full bg-black">
-
-            <button className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8">
-              Call Now
-              <FaArrowRight className="text-sm" />
-            </button>
-</div>
+            <div className="relative w-fit ml-4 rounded-full bg-black">
+              <button className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8">
+                Call Now
+                <FaArrowRight className="text-sm" />
+              </button>
+            </div>
           </div>
 
           {/* Right Section - Form */}
