@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Premium Hero Component
 
-## Getting Started
+A modern and fully responsive hero section for tailoring/fashion websites built with Next.js and Tailwind CSS.
 
-First, run the development server:
+---
 
+## Features
+
+- ✨ Smooth fade-in animations
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🎨 Glassmorphism effects with gradient backgrounds
+- 🎯 Premium orange and black theme
+- ⚡ Lightweight and optimized
+
+---
+
+## Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app@latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm install lucide-react
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Copy the component file to your project and import it:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```jsx
+import PremiumHero from '@/components/PremiumHero';
 
-## Learn More
+export default function Home() {
+  return <PremiumHero />;
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Change Colors
+```jsx
+// Orange to Blue
+from-orange-500 to-orange-600 → from-blue-500 to-blue-600
 
-## Deploy on Vercel
+// Background
+from-gray-950 via-black to-gray-900 → Your colors
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Add Your Images
+Replace placeholder sections:
+```jsx
+// Model Image
+<Image src="/your-model.png" alt="Model" width={418} height={648} />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+// Client Photo
+<Image src="/client.jpg" alt="Client" width={80} height={80} />
+```
+
+### Update Content
+Edit the text directly in the component:
+- Badge text: `#1 RANKED IN THE MARKET`
+- Heading: `Comfort & Style`
+- Description, testimonial, client name, etc.
+
+---
+
+## Responsive Breakpoints
+
+- **Mobile**: < 640px (Stacked layout)
+- **Tablet**: 640px - 1024px (Stacked with better spacing)
+- **Desktop**: 1024px+ (Three column layout)
+
+---
+
+## What's Included
+
+- Animated top badge
+- Hero heading with gradient text
+- Service description with quote icon
+- Contact CTA button with hover effects
+- Customer stats counter
+- Floating model image
+- Client testimonial card with rating
+- Scroll indicator
+
+---
+
+## Requirements
+
+- Next.js 13+
+- Tailwind CSS 3+
+- lucide-react (for icons)
+
+---
+
+**That's it! Simple, clean, and ready to use.** 🚀
