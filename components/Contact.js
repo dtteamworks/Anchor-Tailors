@@ -12,30 +12,30 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
-    console.log("Full Name:", formData.fullName);
-    console.log("Phone:", formData.phone);
-    console.log("Email:", formData.email);
-    console.log("Message:", formData.message);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form Data:", formData);
+  //   console.log("Full Name:", formData.fullName);
+  //   console.log("Phone:", formData.phone);
+  //   console.log("Email:", formData.email);
+  //   console.log("Message:", formData.message);
 
-    // Reset form after submission
-    setFormData({
-      fullName: "",
-      phone: "",
-      email: "",
-      message: "",
-    });
-  };
+  //   // Reset form after submission
+  //   setFormData({
+  //     fullName: "",
+  //     phone: "",
+  //     email: "",
+  //     message: "",
+  //   });
+  // };
 
   return (
     <section className={`relative py-16  ${outfit.className} overflow-hidden`}>
@@ -55,7 +55,10 @@ const Contact = () => {
               and our team will get back to you shortly.
             </p>
             <div className="relative w-fit ml-4 rounded-full bg-black">
-              <Link href={"tel:9441524214"} className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8">
+              <Link
+                href={"tel:9441524214"}
+                className="bg-[#FF9000] -translate-1.5 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-orange-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-8"
+              >
                 Call Now
                 <FaArrowRight className="text-sm" />
               </Link>
@@ -71,17 +74,22 @@ const Contact = () => {
               Requirements with us...
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form
+              action="https://formsubmit.co/dsathyaprakashkurella40@gmail.com"
+              method="POST"
+              className="space-y-5"
+            >
               {/* Full Name Input */}
               <div>
                 <input
                   type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
+                  name="name"
                   placeholder="Your full name"
                   required
-                  className="w-full px-5 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9000] focus:border-transparent transition-all placeholder:text-gray-400"
+                  className="w-full px-5 py-3 text-sm border border-gray-200
+                rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9000]
+                focus:border-transparent transition-all
+                placeholder:text-gray-400"
                 />
               </div>
 
@@ -90,8 +98,6 @@ const Contact = () => {
                 <input
                   type="tel"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   placeholder="Phone number"
                   required
                   className="w-full px-5 py-3 border text-sm border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9000] focus:border-transparent transition-all placeholder:text-gray-400"
@@ -103,8 +109,6 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   placeholder="Email address"
                   required
                   className="w-full px-5 py-3 border text-sm border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9000] focus:border-transparent transition-all placeholder:text-gray-400"
@@ -115,8 +119,6 @@ const Contact = () => {
               <div>
                 <textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   placeholder="Write message"
                   rows="3"
                   required
