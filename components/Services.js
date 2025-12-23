@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { outfit } from './fonts/Outfit';
+import Link from 'next/link';
 
 const Services = () => {
   const services = [
@@ -94,10 +95,10 @@ const Services = () => {
         {/* Contact Button */}
         <div className="flex justify-center">
           <div className="relative border bg-black ml-4 rounded-full">
-            <button className="bg-[#FF9000] -translate-2 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-0.5">
+            <Link href={"tel:9441524214"} className="bg-[#FF9000] -translate-2 border-2 cursor-pointer border-black text-white px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-3 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-0.5">
               Contact Us
               <FaArrowRight className="text-sm" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

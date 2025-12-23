@@ -12,9 +12,8 @@ const Footer = () => {
   ];
 
   const contactDetails = [
-    { type: "phone", value: "+91 12345-67890" },
-    { type: "phone", value: "+91 12345-12345" },
-    { type: "email", value: "Email: abc@123gmail.com" },
+    { type: "phone", value: "+91 9441524214" },
+    { type: "email", value: "sathyaprakashkurella40@gmail.com" },
   ];
 
   const socialLinks = [
@@ -101,30 +100,30 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-xl font-semibold mb-3">Address:</h3>
             <address className="not-italic text-gray-400 text-sm leading-relaxed">
-              Galani, Kumarsain(Shimla)
+              Teacher Colony, Huzurnagar – 508203
               <br />
-              Himachal Pradesh, India
+              Telangana, India
             </address>
           </div>
         </div>
       </div>
 
-      {/* Bottom Section with Anchor Logo */}
+      {/* Bottom Section with Anclor Logo */}
       <div className="relative w-full text-center bg-[#FF9000] py-2.5">
         {/* Copyright Text */}
         <p className="text-gray-900 text-sm font-medium">
-          © 2025 Anchor. All Right Reserved.
+          © 2025 Anclor. All Right Reserved.
         </p>
-         {/* Anchor Logo */}
-            <div className="absolute right-32 bottom-16 opacity-20">
-              <Image
-                src="/AnchorFooterLogo.png"
-                alt="Anchor"
-                width={180}
-                height={80}
-                className="object-contain"
-              />
-            </div>
+        {/* Anclor Logo */}
+        <div className="absolute right-32 bottom-16 opacity-20">
+          <Image
+            src="/AnchorFooterLogo.png"
+            alt="Anclor"
+            width={180}
+            height={80}
+            className="object-contain"
+          />
+        </div>
       </div>
     </footer>
   );

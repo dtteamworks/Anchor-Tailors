@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
 import { outfit } from "./fonts/Outfit";
+import Link from "next/link";
 
 export default function HeroMobile() {
   return (
@@ -107,10 +108,10 @@ export default function HeroMobile() {
                 </p>
 
                 <div className="w-fit relative rounded-full bg-white">
-                  <button className="flex items-center border-2 border-black gap-2 px-8 py-4 bg-[#FF9000] hover:bg-[#e68200] text-white rounded-full font-medium transition-colors duration-300">
+                  <Link href={"tel:9441524214"} className="flex items-center border-2 border-black gap-2 px-8 py-4 bg-[#FF9000] hover:bg-[#e68200] text-white rounded-full font-medium transition-colors duration-300">
                     Contact Us
                     <ArrowRight className="w-5 h-5" />
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="pt-4">

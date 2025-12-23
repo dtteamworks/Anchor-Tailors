@@ -2,9 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
-  title: "Anchor Tailors",
+  title: "Anclor Tailors | Professional Tailoring Services",
   description:
-    "Professional tailoring services with quality craftsmanship and attention to detail",
+    "Expert tailors delivering precise fitting, quality stitching, and elegant designs crafted to perfection.",
 };
 
 export default function RootLayout({ children }) {

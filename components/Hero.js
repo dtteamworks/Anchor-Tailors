@@ -4,6 +4,7 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 import { FaQuoteLeft } from "react-icons/fa";
 import { outfit } from "./fonts/Outfit";
+import Link from "next/link";
 
 export default function Hero() {
   return (<div className="relative">
@@ -36,10 +37,10 @@ export default function Hero() {
 
             {/* Contact Button */}
             <div className="w-fit relative rounded-full bg-white">
-              <button className="flex items-center border-2 border-black -translate-1 gap-2 px-8 py-4 bg-[#FF9000] hover:bg-[#e68200] text-white rounded-full font-medium transition-colors duration-300">
+              <Link href={"tel:9441524214"} className="flex items-center border-2 border-black -translate-1 gap-2 px-8 py-4 bg-[#FF9000] hover:bg-[#e68200] text-white rounded-full font-medium transition-colors duration-300">
                 Contact Us
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}
